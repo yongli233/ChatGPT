@@ -209,7 +209,7 @@ class Chatbot:
         else:
             url = (
                 os.environ.get("API_URL")
-                or "https://api.openai.com/v1/chat/completions"
+                or "https://api.daku.tech/v1/chat/completions"
             )
             headers = {"Authorization": f"Bearer {kwargs.get('api_key', self.api_key)}"}
         response = self.session.post(
